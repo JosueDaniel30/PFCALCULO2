@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo 3 - Integral e^x·cos(x)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/include.js" defer></script>
+</head>
+<body class="bg-light">
+
+<div data-include="header.html"></div>
+
+<div class="container py-5">
+    <h1 class="text-center text-primary mb-4">Ejemplo 3: ∫ e<sup>x</sup>·cos(x) dx</h1>
+
+    <div class="row">
+        <!-- Columna izquierda -->
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h3 class="text-center">∫ e<sup>x</sup>·cos(x) dx</h3>
+                </div>
+            </div>
+            <div class="text-center mb-3">
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#pasos3">
+                    Mostrar pasos de la solución
+                </button>
+            </div>
+            <div id="pasos3" class="collapse">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-info text-white">Solución paso a paso</div>
+                    <div class="card-body">
+                        <ol>
+                            <li>Usamos integración por partes 2 veces.</li>
+                            <li>Primera vez: u = cos(x), dv = e<sup>x</sup> dx → v = e<sup>x</sup>, du = -sin(x) dx.</li>
+                            <li>∫ e<sup>x</sup>cos(x) dx = e<sup>x</sup>cos(x) - ∫ -e<sup>x</sup>sin(x) dx.</li>
+                            <li>Segunda vez: ∫ e<sup>x</sup>sin(x) dx se resuelve de nuevo con integración por partes.</li>
+                            <li>Tras simplificar: <b>∫ e<sup>x</sup>cos(x) dx = (e<sup>x</sup>(sin(x) + cos(x)))/2 + C</b>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-dark text-white">Video Explicativo</div>
+                <div class="card-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/UmB1N6U3FvM" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-include="footer.html"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

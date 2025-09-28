@@ -1,0 +1,43 @@
+body {
+    background-color: #f8f9fa;
+}
+.header-gradient {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 30px 0;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.math-expression {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #eef2f7;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.step-number {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #6a11cb;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+iframe {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 450px;
+}

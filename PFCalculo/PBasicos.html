@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo 1 - Integral x·e^x</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/include.js" defer></script>
+</head>
+<body class="bg-light">
+
+<!-- Importar Header -->
+<div data-include="header.html"></div>
+
+<!-- Contenido -->
+<div class="container py-5">
+
+    <h1 class="text-center text-primary mb-4">Ejemplo 1: Integral ∫ x·e<sup>x</sup> dx</h1>
+
+    <div class="row">
+        <!-- Columna izquierda: problema y pasos -->
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <p>Resolver la integral:</p>
+                    <h3 class="text-center">∫ x·e<sup>x</sup> dx</h3>
+                </div>
+            </div>
+
+            <!-- Botón mostrar pasos -->
+            <div class="text-center mb-3">
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#pasos">
+                    Mostrar pasos de la solución
+                </button>
+            </div>
+
+            <!-- Pasos ocultos -->
+            <div id="pasos" class="collapse">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-info text-white">Solución paso a paso</div>
+                    <div class="card-body">
+                        <ol>
+                            <li>Aplicamos la fórmula de integración por partes: ∫ u·dv = u·v - ∫ v·du.</li>
+                            <li>Elegimos:
+                                <ul>
+                                    <li>u = x → du = dx</li>
+                                    <li>dv = e<sup>x</sup> dx → v = e<sup>x</sup></li>
+                                </ul>
+                            </li>
+                            <li>Sustituimos en la fórmula: ∫ x·e<sup>x</sup> dx = x·e<sup>x</sup> - ∫ e<sup>x</sup> dx</li>
+                            <li>Calculamos: ∫ e<sup>x</sup> dx = e<sup>x</sup></li>
+                            <li>Resultado final: <b>∫ x·e<sup>x</sup> dx = e<sup>x</sup>(x - 1) + C</b></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Columna derecha: video -->
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-dark text-white">Video Explicativo</div>
+                <div class="card-body text-center">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/aqEsQnTtrNc"
+                                title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Importar Footer -->
+<div data-include="footer.html"></div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

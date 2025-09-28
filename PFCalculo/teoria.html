@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¿Qué es la Integración por Partes?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/include.js" defer></script>
+</head>
+<body class="bg-light">
+
+<!-- Importar Header -->
+<div data-include="header.html"></div>
+
+<!-- Contenido -->
+<div class="container py-5">
+
+    <!-- Encabezado -->
+    <h1 class="text-center text-primary mb-4">Integración por Partes</h1>
+
+    <!-- Explicación -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-primary text-white">¿Qué es?</div>
+        <div class="card-body">
+            <p>
+                La <b>integración por partes</b> es una técnica de cálculo integral que se basa en la
+                <b>regla del producto de las derivadas</b>. Sirve para resolver integrales donde aparece
+                un producto de funciones que no son fáciles de integrar directamente.
+            </p>
+            <div class="alert alert-info text-center">
+                <b>Fórmula:</b> ∫ u·dv = u·v - ∫ v·du
+            </div>
+        </div>
+    </div>
+
+    <!-- Utilidad práctica -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-success text-white">¿Para qué sirve?</div>
+        <div class="card-body">
+            <ul>
+                <li><b>Ingeniería:</b> resolver ecuaciones diferenciales en fenómenos de calor, ondas y electricidad.</li>
+                <li><b>Economía:</b> modelar funciones de crecimiento y decaimiento con productos de polinomios y exponenciales.</li>
+                <li><b>Física:</b> calcular trabajo en sistemas con fuerzas variables o integrales trigonométricas complicadas.</li>
+                <li><b>Informática:</b> análisis de algoritmos y probabilidad en distribuciones continuas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Vida cotidiana -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-warning text-dark">Ejemplos en el día a día</div>
+        <div class="card-body">
+            <p>
+                Aunque no siempre lo notamos, la integración por partes aparece en contextos como:
+            </p>
+            <ul>
+                <li>Predecir el <b>consumo eléctrico</b> (modelos de decaimiento exponencial).</li>
+                <li>Calcular la <b>probabilidad</b> en distribuciones estadísticas de tiempo de espera (ejemplo: cuánto tarda un bus en llegar).</li>
+                <li>Optimizar <b>costos de producción</b> donde hay funciones combinadas de crecimiento y decrecimiento.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Métodos alternativos -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-danger text-white">¿Existe un método más fácil?</div>
+        <div class="card-body">
+            <p>
+                En algunos casos sí. Si la integral es complicada, se pueden usar:
+            </p>
+            <ul>
+                <li><b>Cambio de variable:</b> transformar la integral en una forma más sencilla.</li>
+                <li><b>Métodos numéricos:</b> aproximaciones como la regla de Simpson o el trapecio cuando no existe solución analítica.</li>
+                <li><b>Software simbólico:</b> como <code>WolframAlpha</code>, <code>Sympy</code> o <code>Nerdamer</code> para obtener el resultado exacto.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Conclusión -->
+    <div class="alert alert-primary text-center">
+        👉 La integración por partes es una herramienta poderosa para resolver integrales complejas
+        y tiene aplicaciones tanto teóricas como prácticas en múltiples áreas.
+    </div>
+
+</div>
+
+<!-- Importar Footer -->
+<div data-include="footer.html"></div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

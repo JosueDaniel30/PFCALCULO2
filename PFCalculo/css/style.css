@@ -1,0 +1,43 @@
+/* Hero con gradiente */
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+}
+
+/* Footer elegante */
+.footer {
+    background: linear-gradient(135deg, #343a40, #212529);
+}
+
+/* Animación fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Interactividad */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
