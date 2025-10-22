@@ -1,13 +1,6 @@
-/* Hero con gradiente */
-.hero {
-    height: 80vh;
-    background: linear-gradient(135deg, #007bff, #6610f2);
-    color: white;
-}
-
-/* Footer elegante */
-.footer {
-    background: linear-gradient(135deg, #343a40, #212529);
+/* ===== ESTILOS GENERALES Y ANIMACIONES ===== */
+body {
+    overflow-x: hidden; /* Previene el scroll horizontal */
 }
 
 /* Animación fade-in */
@@ -24,7 +17,7 @@
     }
 }
 
-/* Interactividad */
+/* Interactividad para botones */
 .btn {
     transition: all 0.3s ease;
 }
@@ -33,11 +26,179 @@
     transform: scale(1.05);
 }
 
+/* Interactividad para cards */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
 }
 
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ===== HERO CON GRADIENTE ===== */
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+}
+
+/* ===== FOOTER ELEGANTE ===== */
+.footer {
+    background: linear-gradient(135deg, #343a40, #212529);
+}
+
+/* ===== ELEMENTOS MATEMÁTICOS RESPONSIVOS ===== */
+.math-content {
+    font-size: clamp(14px, 3vw, 18px);
+    overflow-wrap: break-word;
+}
+
+/* ===== VIDEO CONTAINER RESPONSIVO ===== */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ===== ESTILOS PARA LISTAS ===== */
+ol {
+    padding-left: 1.5rem;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* ===== MEDIA QUERIES PARA MÓVILES ===== */
+@media (max-width: 768px) {
+    /* Ajustes generales */
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Hero en móviles */
+    .hero {
+        height: auto;
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+
+    /* Cards en móviles */
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Iframes en móviles */
+    iframe {
+        max-width: 100%;
+    }
+
+    /* Ajustes de espaciado para móviles */
+    .py-md-5 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .mb-md-4 {
+        margin-bottom: 1rem !important;
+    }
+
+    .g-md-4 {
+        --bs-gutter-y: 1rem;
+    }
+}
+
+/* ===== MODO OSCURO AUTOMÁTICO ===== */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    .bg-light {
+        background-color: #121212 !important;
+    }
+
+    .navbar {
+        background-color: #1f1f1f !important;
+    }
+
+    .navbar-brand, .nav-link {
+        color: #e0e0e0 !important;
+    }
+
+    .card {
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+    }
+
+    .card-header.bg-info {
+        background-color: #0dcaf0 !important;
+        color: #000;
+    }
+
+    .card-header.bg-dark {
+        background-color: #333 !important;
+        color: #fff;
+    }
+
+    .text-primary {
+        color: #6ea8fe !important;
+    }
+
+    .footer {
+        background: linear-gradient(135deg, #000, #222);
+        color: #ccc;
+    }
+
+    .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+
+    /* Ajustes específicos para el hero en modo oscuro */
+    .hero {
+        background: linear-gradient(135deg, #0d6efd, #5a23c8);
+    }
 }
